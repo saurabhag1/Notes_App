@@ -1,0 +1,261 @@
+body {
+    background-color: #dae5f5;
+}
+
+.NotesName {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.02581rem;
+    /* space */
+    position: relative;
+    left: 20px;
+}
+
+.NotesGroupHeading {
+    background: #001f8b;
+    width: 77vw;
+    height: 77px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+.NotesContent {
+    border-radius: 0rem 0rem 0rem 0.9375rem;
+    background: #dae5f5;
+    width: 67vw;
+    height: 63vh;
+    overflow-y: scroll;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: fixed;
+    top: 77px;
+}
+
+.NotesEnter {
+    background-color: #001f8b;
+    height: 20vh;
+    /* center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    width: 77vw;
+}
+
+.NotesInput {
+    color: #9a9a9a;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.03725rem;
+    max-width: 73vw;
+    max-height: 16vh;
+    min-width: 73vw;
+    min-height: 16vh;
+}
+
+.NotesInput::placeholder {
+    position: absolute;
+    top: 0px;
+}
+
+.NotesInputButton {
+    background-color: transparent;
+    border: 0px solid transparent;
+    position: absolute;
+    right: 3%;
+    bottom: 16%;
+}
+
+.time {
+    color: #353535;
+    font-family: Roboto;
+    font-size: 1.16463rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 97.688%;
+    /* 1.13775rem */
+    letter-spacing: 0.02331rem;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.date {
+    color: #353535;
+    font-family: Roboto;
+    font-size: 1.16463rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 97.688%;
+    /* 1.13775rem */
+    letter-spacing: 0.02331rem;
+}
+
+.data {
+    height: auto;
+    min-height: 210px;
+    margin: 0px 10px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 20px #00000040;
+}
+
+.notes {
+    width: auto;
+    margin: 20px 50px 0px 50px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160.188%;
+    /* 1.80213rem */
+    letter-spacing: 0.03938rem;
+    width: 300px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.dateandtime {
+    position: relative;
+    bottom: -70px;
+    right: -640px;
+}
+
+@media (max-width: 600px) {
+    .NotesGroupHeading,
+    .NotesContent {
+        width: 100vw;
+        position: relative;
+        top: -90px;
+    }
+    .NotesEnter {
+        width: 100vw;
+    }
+    .NotesInput {
+        max-width: 95vw;
+        min-width: 95vw;
+    }
+    .backButton {
+        display: block;
+    }
+    .data {
+        max-width: 85vw;
+        overflow-x: hidden;
+    }
+    .dateandtime {
+        position: relative;
+        bottom: -75px;
+        left: 220px;
+    }
+    .date {
+        font-size: 15px;
+    }
+    .time {
+        font-size: 15px;
+    }
+    .dot {
+        font-size: 5px;
+    }
+}
+
+@media (min-width: 600px) {
+    .backButton {
+        display: none;
+    }
+}
+
+@media (max-width: 365px) {
+    .dateandtime {
+        position: relative;
+        bottom: -75px;
+        left: 5px;
+    }
+    .date {
+        font-size: 15px;
+    }
+    .time {
+        font-size: 15px;
+    }
+    .dot {
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 490px) {
+    .dateandtime {
+        position: relative;
+        bottom: -75px;
+        left: 160px;
+    }
+    .date {
+        font-size: 15px;
+    }
+    .time {
+        font-size: 15px;
+    }
+    .dot {
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 430px) {
+    .dateandtime {
+        position: relative;
+        bottom: -75px;
+        left: 100px;
+    }
+    .date {
+        font-size: 15px;
+    }
+    .time {
+        font-size: 15px;
+    }
+    .dot {
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 365px) {
+    .dateandtime {
+        position: relative;
+        bottom: -75px;
+        left: 70px;
+    }
+    .date {
+        font-size: 12px;
+    }
+    .time {
+        font-size: 12px;
+    }
+    .dot {
+        font-size: 3px;
+    }
+}
+
+@media (max-width: 600px) {
+    .NotesGroupHeading,
+    .NotesContent {
+        width: 100vw;
+        position: relative;
+        top: -90px;
+    }
+}
