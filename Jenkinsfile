@@ -1,8 +1,8 @@
 pipeline {
   agent any
   environment {
-    IMAGE = "saurabhag1/notes_app"   // change if using different Docker repo
-    TAG = "${env.BUILD_ID}"
+    IMAGE = "saurabhagrawal0001/notes_app"  // change if using different Docker repo
+    TAG = "1"
   }
   stages {
     stage('Checkout') {
