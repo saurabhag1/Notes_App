@@ -11,7 +11,7 @@ const RightSidePannel = () => {
             style={{ width: "50vw" }}
           />
           <div>
-            <div className={StyleRightSidePannel.imageText1}>Pocket Notes</div>
+            <div className={StyleRightSidePannel.imageText1}>Saurabh Webhook - Pocket Notes</div>
             <div className={StyleRightSidePannel.imageText2}>
               Send and receive messages without keeping your phone online.
               <br />
